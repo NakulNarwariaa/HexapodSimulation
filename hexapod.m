@@ -38,8 +38,10 @@ i5=i1;
 i6=i1;
 
 r=1;
+
 % Equation for l1-l6
-%Making combinations of positions and orientations
+
+% SIMULATION DATA GENERATION - Making combinations of positions and orientations
 for i =1: size(px,2)
     for j = 1:size(py,2) 
       for k=1:size(pz,2)
@@ -97,34 +99,6 @@ lengths = [l1,l2,l3,l4,l5,l6];
 in1=[i1,i2,i3,i4,i5,i6];
 [idx2,C2]=kmeans(in1,4);
 
-% %Plotting Figures
-% figure;
-% plot3(in1(idx2==1,1),in1(idx2==1,2),in1(idx2==1,3),'.r')
-% hold on
-% plot3(in1(idx2==2,1),in1(idx2==2,2),in1(idx2==2,3),'.g')
-% hold on
-% plot3(in1(idx2==3,1),in1(idx2==3,2),in1(idx2==3,3),'.b')
-% hold on
-% plot3(in1(idx2==4,1),in1(idx2==4,2),in1(idx2==4,3),'.y')
-% hold off
-% 
-% 
-% 
-% 
-% figure;
-% plot3(lengths(idx2==1,1),lengths(idx2==1,2),lengths(idx2==1,3),'.r')
-% hold on
-% plot3(lengths(idx2==2,1),lengths(idx2==2,2),lengths(idx2==2,3),'.g')
-% hold on
-% plot3(lengths(idx2==3,1),lengths(idx2==3,2),lengths(idx2==3,3),'.b')
-% hold on
-% plot3(lengths(idx2==4,1),lengths(idx2==4,2),lengths(idx2==4,3),'.y')
-% hold off
-
-
-
-
-
 % Target 1--> Class 1
 position11=in1(idx2==1,1);
 position12=in1(idx2==1,2);
@@ -142,7 +116,6 @@ l4class1 = lengths(idx2==1,4);
 l5class1 = lengths(idx2==1,5);
 l6class1 = lengths(idx2==1,6);
 input11 = [l1class1,l2class1,l3class1,l4class1,l5class1,l6class1];
-%display(Target1);
 input1=input11';
 target1=Target1';
 
