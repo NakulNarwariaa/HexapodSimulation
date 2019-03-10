@@ -1,7 +1,7 @@
-#Hexapod Simulation
+# Hexapod Simulation
 ---
 
-##Abstract
+## Abstract
 ---
 
 An alternative approach is presented to the problem of real time forward kinematics calculations of the Stewart Platform with the use of inverse kinematics equations. Due to the complexity of nonlinear and polynomial equations associated with the geometry of machines, these cannot be computed at real time. Consequently, most mechanical contraptions have not been used to their full potential. To overcome this limitation, this approach suggests the use of neural networks to train according to datasets and calculate forward kinematic values at real time. 
@@ -10,7 +10,7 @@ The proposed method is applied to a hexapod, also known as the Gough- Stewart pl
 
 Detailed description is added in the complete report of the simulation along with the conclusions. 
 
-##Terminology
+## Terminology
 ---
 
 Any freely-suspended object placed on the platform is allowed to move in six degree of freedoms, which are the three
